@@ -1,4 +1,5 @@
 module.exports ={
 	url: 'https://google.com',
-	browser: 'chrome'
+	browser: 'chrome',
+	headless: true
 }
