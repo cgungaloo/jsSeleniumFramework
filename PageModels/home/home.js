@@ -20,13 +20,10 @@ class Home extends Page{
 
 	async searchForItem(searchTerm){
 		await console.log("Searching for : " + searchTerm);
-		// sleep(5000);
 		var searchbar = await driver.findElement(By.name('q'));
 		await console.log("Looking for : q ");
-		// sleep(5000);
 		await searchbar.sendKeys(searchTerm);
 		await console.log("Sent Keys ");
-		// sleep(5000);
     	await searchbar.sendKeys(sdriver.Key.ENTER);
     	await console.log("Pressed Enter ");
 		sleep(6000);
